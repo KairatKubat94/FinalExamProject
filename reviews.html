@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы - Автосалон</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">  <!-- если файл лежит в папке css -->
+  <style>
+    /* Стили для рамки вокруг каждого отзыва */
+    .testimonial-blockquote {
+      border: 2px solid #ddd; /* Цвет и толщина рамки */
+      padding: 20px; /* Отступы внутри рамки */
+      margin-bottom: 20px; /* Отступ снизу */
+      border-radius: 8px; /* Скругление углов */
+      background-color: #f9f9f9; /* Цвет фона */
+    }
+
+    .testimonial-blockquote footer {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .testimonial-blockquote p {
+      font-size: 1.1em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Автосалон</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">Автомобили</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Отзывы -->
+  <div class="container my-5">
+    <h2 class="text-center">Отзывы наших клиентов</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <blockquote class="blockquote testimonial-blockquote">
+          <p>Очень доволен покупкой! Качество автомобиля на высоте. Обслуживание на высшем уровне, сотрудники помогли выбрать подходящую модель, с учётом всех моих пожеланий.</p>
+          <footer class="blockquote-footer">Иван Петров, покупатель</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="blockquote testimonial-blockquote">
+          <p>Отличное обслуживание, дружелюбный персонал. Рекомендую! Успели оформить всю документацию быстро и без лишних вопросов.</p>
+          <footer class="blockquote-footer">Марина Васильева, покупатель</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="blockquote testimonial-blockquote">
+          <p>Прекрасный опыт покупки! Качественная консультация и помощь в выборе машины. Весь процесс прошёл без задержек и с максимальной выгодой для меня.</p>
+          <footer class="blockquote-footer">Алексей Смирнов, покупатель</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="blockquote testimonial-blockquote">
+          <p>Благодарю сотрудников автосалона за внимательное отношение и профессионализм. Всё было сделано быстро и качественно, а сам автомобиль полностью оправдал мои ожидания.</p>
+          <footer class="blockquote-footer">Светлана Кузнецова, покупатель</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="blockquote testimonial-blockquote">
+          <p>Никогда не думал, что покупка автомобиля может быть настолько лёгким и приятным процессом. У вас работают настоящие профессионалы. Благодарю за помощь в выборе!</p>
+          <footer class="blockquote-footer">Дмитрий Иванов, покупатель</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="blockquote testimonial-blockquote">
+          <p>Мне понравилось, как всё организовано: четкие сроки, внимание к деталям и высокий уровень сервиса. Машина была подготовлена на отлично, все вопросы решались быстро.</p>
+          <footer class="blockquote-footer">Татьяна Морозова, покупатель</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подключаем Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

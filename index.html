@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автосалон</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    /* Здесь можно добавить свой собственный CSS, если нужно */
+  </style>
+</head>
+
+<body>
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Автосалон</a> <!-- Главная страница -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a> <!-- Ссылка на главную -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a> <!-- Ссылка на страницу "О нас" -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">Автомобили</a> <!-- Ссылка на страницу "Автомобили" -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a> <!-- Ссылка на страницу "Контакты" -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Отзывы</a> <!-- Ссылка на страницу "Отзывы" -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Главный баннер -->
+  <div class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Идеальный автомобиль для вас</h1>
+      <p>Откройте для себя лучший выбор автомобилей премиум класса</p>
+      <a href="cars.html" class="btn-custom">Перейти в каталог</a> <!-- Ссылка на страницу с каталогом автомобилей -->
+    </div>
+  </div>
+
+  <!-- Преимущества -->
+  <div class="container my-5">
+    <h2 class="section-title">Почему выбирают нас?</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="advantage-card">
+          <h3>Широкий выбор</h3>
+          <p>От новых моделей до эксклюзивных предложений.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="advantage-card">
+          <h3>Гарантия качества</h3>
+          <p>Каждый автомобиль проходит тщательную проверку качества.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="advantage-card">
+          <h3>Индивидуальный подход</h3>
+          <p>Мы подберем автомобиль по вашим требованиям.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Популярные автомобили -->
+  <div class="container my-5">
+    <h2 class="section-title">Популярные автомобили</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://tmna.aemassets.toyota.com/is/image/toyota/lexus/images/models/rx/2025/visualizer/350-premium/exterior/19-inch-five-spoke-alloy-wheels-with-dark-gray-metallic-and-machined-finish/eminent-white-pearl/large-18.jpg?extend=-17,-585,-17,-585&hei=628&wid=1440&qlt=100" class="card-img-top" alt="Автомобиль 1">
+          <div class="card-body">
+            <h5 class="card-title">Lexus Rx</h5>
+            <p class="card-text">Комфорт и мощь в одном автомобиле.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.bmw.kg/content/dam/bmw/common/all-models/m-series/m8-gran-coupe/2022/onepager/bmw-m8-gran-coupe-onepager-gallery-m8-gc-thumbnail-01.jpg/jcr:content/renditions/cq5dam.resized.img.890.medium.time1638370263508.jpg" class="card-img-top" alt="Автомобиль 2">
+          <div class="card-body">
+            <h5 class="card-title">BMW 8 Series</h5>
+            <p class="card-text">Люксовый кроссовер с уникальным стилем.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/highlander/xse/6959/1g3/36/5.png?fmt=webp-alpha&wid=930&qlt=90" class="card-img-top" alt="Автомобиль 3">
+          <div class="card-body">
+            <h5 class="card-title">Toyota Highlander</h5>
+            <p class="card-text">Выносливость и проходимость для любых дорог.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

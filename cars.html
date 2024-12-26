@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автомобили - Автосалон</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">  <!-- если файл лежит в папке css -->
+  <style>
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      flex-grow: 1;  /* Чтобы карточка могла растягиваться в зависимости от текста */
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .card-text {
+      flex-grow: 1; /* Это обеспечит растяжение текста, если его мало */
+    }
+    .category-title {
+      margin-top: 40px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Автосалон</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">Автомобили</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Автомобили -->
+  <div class="container my-5">
+    <h2 class="text-center mb-5">Наши автомобили</h2>
+
+    <!-- Седаны -->
+    <div class="category-title">Седаны</div>
+    <div class="row">
+      <!-- Lexus ES 300h -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.lexus.com/content/dam/lexus/images/models/es/2024/visualizer/350/exterior/18-split-five-spoke-alloy-noise-reduction/caviar/large-1.jpg" class="card-img-top" alt="Lexus ES 300h">
+          <div class="card-body">
+            <h5 class="card-title">Lexus ES 300h</h5>
+            <p class="card-text">Lexus ES 300h — Роскошь, комфорт и технологии на новом уровне. Ищете автомобиль, который сочетает в себе элегантность, инновационные технологии и высокое качество? Этот автомобиль идеально подойдет для тех, кто ценит стиль, комфорт и превосходные технические характеристики.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toyota Camry 80 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/camry/se/2561/1l7/36/5.png?fmt=webp-alpha&wid=930&qlt=90" class="card-img-top" alt="Toyota Camry 80">
+          <div class="card-body">
+            <h5 class="card-title">Toyota Camry 80</h5>
+            <p class="card-text">Toyota Camry 80 — Эталон комфорта, надежности и элегантности. Этот автомобиль сочетает в себе высокие технологии, безопасность и отличную динамику. Идеально подходит для городских поездок и дальних путешествий, предлагая комфорт и уверенность на каждом километре.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кроссоверы -->
+    <div class="category-title">Кроссоверы</div>
+    <div class="row">
+      
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/4runner/trdoff-roadpremiumi-forcemax/8630/1l0/36/5.png?fmt=webp-alpha&wid=930&qlt=90" class="card-img-top" alt="BMW X5">
+          <div class="card-body">
+            <h5 class="card-title">Toyota 4Runner</h5>
+            <p class="card-text">Toyota 4Runner — кроссовер нового поколения, который сочетает мощность, роскошь и отличные внедорожные качества. Идеальный выбор для тех, кто хочет чувствовать себя уверенно как на городских улицах, так и на сложных трассах.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lexus RX -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://tmna.aemassets.toyota.com/is/image/toyota/lexus/images/models/rx/2025/visualizer/350-premium/exterior/21-inch-20-spoke-alloy-wheels-with-dark-gray-metallic-finish/matador-red-mica/large-18.jpg?extend=-17,-585,-17,-585&hei=628&wid=1440&qlt=100" class="card-img-top" alt="Lexus RX">
+          <div class="card-body">
+            <h5 class="card-title">Lexus RX</h5>
+            <p class="card-text">Lexus RX — современный кроссовер, который сочетает в себе стиль, комфорт и передовые технологии. Подходит для активных людей, которые ценят качество и безопасность на дороге.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Спортивные комплектации -->
+    <div class="category-title">Спортивные комплектации</div>
+    <div class="row">
+      <!-- Lexus ES 300h F Sport -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.lexus.com/content/dam/lexus/images/models/es/2024/visualizer/350-f-sport/exterior/19-split-five-spoke-gloss-black/matador-red-mica/large-1.jpg" class="card-img-top" alt="Lexus ES 300h F Sport">
+          <div class="card-body">
+            <h5 class="card-title">Lexus ES 300h F Sport</h5>
+            <p class="card-text">Lexus ES 300h F Sport — Идеальный баланс между динамикой, стилем и комфортом. Эта комплектация сочетает спортивную элегантность и передовые технологии. Идеально подходит для тех, кто ищет высокую динамику, утонченный стиль и несравненный комфорт.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BMW M4 Competition -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXuIotL3hSF2%25P61RO8m5fbiwWhcyvQFLalZyS4iqb4glR%25IzOSniKWPkJEmDQP7u0o1G7cPrTRI2zBy2oDNeg89RbfKYmUrOpQhRVAfS5cVLNHCLvhJPvOjhwmzqIb%25snvzqUxEw8%25P6rbP7sY7OVK3dBzcBqrVAeqKhN7DlMA84YtZQ53mM65e5V5tXYCygN62gmlTv0TkUyX3242EVTQdjcjm13azDxDL0dnkq8cnCzOALUxbnkIFJG8frABKupUIaFeWS6GbUKMPVYp9gWhbNmQtiPo90ya6fbHi4TnFt9%25wc3O8iiftxdIUqw178ziPftECUkwEo7slGAtsbCrXpF7PclZQ6KCh6XRaYWluLQ5nmPXSsagOybQ1dnvIT9aMlO2B3inEZIjedwWj5BDMztPfgeqhk7b1DMLoAC9Q%25hJHFliNFou%25KXw0ZHSfWQt4v%25V1Pa7cjfNEbnCHy10s9Ol%25LE4riIgMSscZwBvq4rxRte2pfZ857Mj6ARUgChDYK5GvloqPcgp2XHLb9v6jQ%25JLn2YDafuAPjmqn1ScFDyLOEVu%25qTJIsFfIL3uBrK66JdSeZWCuuzVMRPonSkNh5N2DVA0og0QINF4Hv45a0Kc%252cwQ4WxfjxqCcP81D8LhxbUEqUPI89RkBzcSktfoEE47Zvz56swTRBYnkrxl59kE29t8YgM1NSk9Phe" class="card-img-top" alt="BMW M4 Competition">
+          <div class="card-body">
+            <h5 class="card-title">BMW M4 Competition</h5>
+            <p class="card-text">Линейка моделей M Coupe сочетает в себе эстетику и спортивный стиль, которые Вы по праву ожидаете от BMW M. Разнообразные системы, использующиеся в автоспорте, повышают динамику движения этих моделей, которая проявляется как на гоночных трассах, так и в повседневной жизни.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Подключаем Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
